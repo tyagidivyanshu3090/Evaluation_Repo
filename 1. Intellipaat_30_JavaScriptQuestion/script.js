@@ -18,3 +18,15 @@
 
 console.log("5" + 2); // * 52
 console.log("5" - 2); // * 3
+
+// ? Commit 3: forEach loop for array
+
+let store = ["apples", "guaua", 23];
+store.forEach((item) => console.log(item));
+
+let numbers = [1, 2, 3, 4];
+
+let result = numbers.forEach((num) => num * 2);
+
+console.log(result); // undefined ❌ (Does not return a new array)
+console.log(numbers);

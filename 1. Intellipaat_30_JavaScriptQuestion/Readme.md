@@ -20,3 +20,27 @@ console.log(parseInt("hello")); // NaN (cannot convert "hello" to a number)
 console.log("hello" - 5); // NaN
 console.log("20px" / 2); // NaN
 ```
+
+# 📝 Commit 3: JavaScript
+
+- primitive type are immutable and whereas object types are mutable in js.
+- primitive datatye: `Bigint` @ defined using 'n' as the suffix to number or BigInt function
+
+```js
+let bigNum = 123456789012345678901234567890n;
+let bigNum1 = BigInt(12345678901234567890);
+```
+
+- In javaScript function are object and can be assigned to variable, passed as argument or returned form function
+- To iterate over the array there are 2 method `forEach` and `map`. Both have same syntax but map function transforms elements and returns a new array whereas forEach(): Executes code but does NOT return a new array
+
+```js
+let numbers = [1, 2, 3, 4];
+
+let result = numbers.forEach((num) => num * 2);
+
+console.log(result); // undefined ❌ (Does not return a new array)
+console.log(numbers); // [1, 2, 3, 4] (Original array unchanged)
+```
+
+## 🧐 Purpose of isNaN:
