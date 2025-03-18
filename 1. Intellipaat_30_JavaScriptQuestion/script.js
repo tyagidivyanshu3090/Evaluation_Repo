@@ -8,7 +8,8 @@
 
 // // * NaN is not a number but typeof shows number
 
-// console.log(typeof NaN); // "number".
+console.log(typeof NaN); // "number".
+
 // // It is a special value that represents an invalid or undefined mathematical operation.
 // console.log(0 / 0); // NaN
 // console.log(Math.sqrt(-1)); // NaN (because square root of negative numbers is not real)
@@ -30,3 +31,11 @@ let result = numbers.forEach((num) => num * 2);
 
 console.log(result); // undefined ❌ (Does not return a new array)
 console.log(numbers);
+
+// ? Commit 3: isNaN() function
+
+console.log(isNaN(100)); // false (100 is a number)
+console.log(isNaN("Hello")); // true  ("Hello" is not a number)
+console.log(isNaN(NaN)); // true  (NaN is Not-a-Number)
+console.log(isNaN(undefined)); // true (undefined is not a number)
+console.log(isNaN("123")); // false ("123" is a valid number after conversion)

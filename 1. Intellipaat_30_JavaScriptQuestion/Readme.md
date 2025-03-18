@@ -44,3 +44,7 @@ console.log(numbers); // [1, 2, 3, 4] (Original array unchanged)
 ```
 
 ## 🧐 Purpose of isNaN:
+
+- The isNaN() function is used to check if a value is NaN (Not-a-Number). It returns:
+- ✅ true → if the value is NaN
+- ❌ false → if the value is a valid number
