@@ -9,3 +9,14 @@ console.log(0 / 0); // NaN
 console.log(Math.sqrt(-1)); // NaN (because square root of negative numbers is not real)
 console.log(parseInt("hello")); // NaN (cannot convert "hello" to a number)
 ```
+
+# 📝 Commit 2: Type coercion
+
+- ✅ General Rule: If one operand is a string in +, JavaScript converts the other operand to a string and concatenates.
+- ✅ General Rule: For -, \*, /, %, JavaScript tries to convert strings to numbers if possible.
+- ✅ Non-numeric strings result in `NaN` (Not-a-Number) when used in arithmetic operations.
+
+```js
+console.log("hello" - 5); // NaN
+console.log("20px" / 2); // NaN
+```
