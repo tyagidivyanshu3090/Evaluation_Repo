@@ -34,6 +34,10 @@ let bigNum1 = BigInt(12345678901234567890);
 - In javaScript function are object and can be assigned to variable, passed as argument or returned form function
 - To iterate over the array there are 2 method `forEach` and `map`. Both have same syntax but map function transforms elements and returns a new array whereas forEach(): Executes code but does NOT return a new array
 
+## 🔹 Yes, map() and forEach() do NOT modify the original array
+
+- Both map() and forEach() iterate over an array, but neither modifies the original array directly unless you explicitly change the elements inside the callback.
+
 ```js
 let numbers = [1, 2, 3, 4];
 
